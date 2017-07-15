@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>外卖html5网站</title>
+<!--修补在大部分移动设备上显示的问题-->
+<meta name="viewport" content="width=device-wdith,initial-scale=1.0">
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link href="css/style.css" rel="stylesheet" media="all">
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/bootstrap.js"></script>
+</head>
+
+<body>
+<!--头部-->
+<header id="headerBox">
+<div class="container">
+    <div class="headerbox">
+        <div class="logophone">
+        <div class="headerlogo"><img src="images/logo.png"/></div>
+        <div id="headerphone">
+           <ul>
+             <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></li>
+             <li><p>+13838129081</p></li>
+           </ul>
+        </div>
+        </div>
+        <div class="logincart">
+        <div class="headerlogin"><a href="login.html">登录</a></div>
+        <script>
+        $(function(){
+		    $(".headercart .cart").hover(function(){
+				$(".headercart .cartinfo").show();},
+				function(){
+				$(".headercart .cartinfo").hide()
+				})
+		})
+        </script>
+        <div class="headercart">
+            <div class="cart"><img src="images/bag.png">
+            <div class="cartinfo">
+                <p>购物车中还没有商品。</p>
+                <p class="balance"><a href="">结算</a></p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</header>
+<!--头部-->
+
+<!--banner-->
+<div class="bannerBox">
+   <div class="banner_menuBox">
+   <span class="menu"><img src="images/nav.png" alt=""/> </span>
+       <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="menus.html">菜单</a></li>
+          <li><a href="photos.html">相册</a></li>
+          <li><a href="active.html">活动</a></li>
+          <li><a href="about.html">关于我们</a></li>
+          <li><a href="contact.html">联系我们</a></li>
+       </ul>
+   </div>
+</div>
+<script>
+$(function(){
+     $(".banner_menuBox .menu").toggle(function(){
+		 $(".banner_menuBox ul").show()
+		 },
+	 
+	  function(){	 
+		 $(".banner_menuBox ul").hide() 
+	     })
+})
+</script>
+<!--banner-->
+<!--搜索-->
+<div class="searchBox">
+   <div class="searchbox">
+   <div class="searchmenu">
+   <label>menu </label>
+     <select name="">
+        <option>麻婆豆腐</option>
+        <option>酸辣鱼</option>
+        <option>西红柿炒鸡蛋</option>
+     </select>
+   </div>
+      <div class="searchmenusize">
+   <label>size</label>
+     <select name="">
+        <option>大</option>
+        <option>中</option>
+        <option>小</option>
+     </select>
+      </div>
+      <div class="search" >
+      <form>
+      <input type="submit" value="search" />
+      </form>
+      </div>
+   </div>
+   </div>
+<!--搜索-->  
+<!--菜单-->
+<div class="menu_listBox">
+     <div class="menu_list_title">
+     <h3>菜单</h3>
+     </div>
+<ul>
+<li>
+<a href="#"><img src="images/s1.jpg"></a>
+<div class="menu_list_price">
+<a href="#" class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></a>
+<span>$65.00</span>
+</div>
+</li>
+<li>
+<a href="#"><img src="images/s2.jpg"></a>
+<div class="menu_list_price">
+<a href="#" class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></a>
+<span>$65.00</span>
+</div>
+</li>
+<li>
+<a href="#"><img src="images/s3.jpg"></a>
+<div class="menu_list_price">
+<a href="#" class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></a>
+<span>$65.00</span>
+</div>
+</li>
+<li>
+<a href="#"><img src="images/s4.jpg"></a>
+<div class="menu_list_price">
+<a href="#" class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></a>
+<span>$65.00</span>
+</div>
+</li>
+<li>
+<a href="#"><img src="images/s5.jpg"></a>
+<div class="menu_list_price">
+<a href="#" class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></a>
+<span>$65.00</span>
+</div>
+</li>
+<li>
+<a href="#"><img src="images/s6.jpg"></a>
+<div class="menu_list_price">
+<a href="#" class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></a>
+<span>$65.00</span>
+</div>
+</li>
+<li>
+<a href="#"><img src="images/s7.jpg"></a>
+<div class="menu_list_price">
+<a href="#" class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></a>
+<span>$65.00</span>
+</div>
+</li>
+<li>
+<a href="#"><img src="images/s8.jpg"></a>
+<div class="menu_list_price">
+<a href="#" class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></a>
+<span>$65.00</span>
+</div>
+</li>
+
+</ul>
+</div>
+<!--菜单-->
+<div style="clear:left;"></div>
+<!--底部-->
+<div class="footerBox">
+<div class="footerbox">
+    <dl>
+    <dt>关于我们</dt>
+    <dd class="footerbox_dd">多种蔬菜、水果的完美组合。让您的舌尖随美食而跳动。多味披萨，美味享不停。<a href="">[详情]</a></dd>
+    </dl>
+    <dl>
+    <dt>饮食文化</dt>
+    <dd><a href="">多种蔬菜、水果的完美组合。</a></dd>
+    <dd><a href="">让您的舌尖随美食而跳动。</a></dd>
+    <dd><a href="">多味披萨，美味享不停。</a></dd>
+    <dd><a href="">多种蔬菜、水果的完美组合。</a></dd>
+    </dl>
+    <dl>
+    <dt>今日热卖</dt>
+    <dd><a href="">多种蔬菜、水果的完美组合。</a></dd>
+    <dd><a href="">让您的舌尖随美食而跳动。</a></dd>
+    <dd><a href="">多味披萨，美味享不停。</a></dd>
+    <dd><a href="">多种蔬菜、水果的完美组合。</a></dd>
+    </dl>
+    <dl>
+    <dt>联系我们</dt>
+    <dd><a href="">多种蔬菜、水果的完美组合。</a></dd>
+    <dd><a href="">让您的舌尖随美食而跳动。</a></dd>
+    <dd><a href="">多味披萨，美味享不停。</a></dd>
+    <dd><a href="">多种蔬菜、水果的完美组合。</a></dd>
+</dl>
+</div>
+</div>
+<!--底部-->
+<!--底部导航-->
+<div class="footernav">
+<ul>
+<li><a href="index.html">首页</a></li>
+<li><a href="active.html">活动</a></li>
+<li><a href="photos.html">相册</a></li>
+</ul>
+</div>
+<!--底部导航-->
+<!--版权-->
+<div class="copyright">
+Copyright © 2015.Company name All rights reserved.html5网页模板
+</div>
+<!--版权-->
+</body>
+</html>
